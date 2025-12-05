@@ -4,14 +4,6 @@ body {
         }
         h1 {
             color: whitesmoke;
-=======
- body {
-            font-family: Arial, sans-serif;
-            background-color: pink;
-        }
-        h1 {
-            color: hotpink;
->>>>>>> 944cf3b46e825fc0415aef58af5719e796197ca7
         }
         p {
             font-size: 16px;
