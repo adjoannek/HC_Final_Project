@@ -3,27 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <title>Final Project CSCI 127 Honors</title>
-    <marquee>Welcome to Our Page!</marquee>
-    <h1>Final Project CSCI 127 Honors</h1>
-    <h2>Group Members: Joanne Kwarteng, Rubi Sakala, Kayla Wilson</h2>
-    <p>This is our final project!</p>
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="console" href="script.js"
 </head>
 <body>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: gray;
-        }
-    h1 {
-        color: whitesmoke;
-    }
-    p {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-    </style>
+
+    <div class="overlay">
+        <h1>Welcome to Our Project</h1>
+        <h2>Joanne Kwarteng, Kayla Wilson, Rubi Sakala</h2>
+
+<div class="tab-container">
+
+    <!-- Tab Buttons -->
+    <div class="tabs">
+        <button class="tab-button active" data-tab="tab1">
+            <img src="new2train_logo.png" alt="2 Train">
+        </button>
+
+        <button class="tab-button" data-tab="tab2">
+            <img src="new4train_logo.png" alt="4 Train">
+        </button>
+
+        <button class="tab-button" data-tab="tab3">
+            <img src="6train_logo.png" alt="6 Train">
+        </button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+        <div id="tab1" class="content-section active">
+            <h2>2 Train Data</h2>
+            <p>Graphs and explainations blah blah blah</p>
+        </div>
+
+        <div id="tab2" class="content-section">
+            <h2>4 Train Data</h2>
+            <p>Graphs and explainations blah blah blah</p>
+        </div>
+
+        <div id="tab3" class="content-section">
+            <h2>6 Train Data</h2>
+            <p>Graphs and explainations blah blah blah</p>
+        </div>
+    </div>
+
+</div>
+<script src="script.js"></script>
 </body>
 </html>

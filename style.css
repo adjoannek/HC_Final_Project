@@ -1,10 +1,90 @@
+/* Full-page background image */
 body {
-    background-color: gray;
-        }
-        h1 {
-            color: whitesmoke;
-        }
-        p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
+    margin: 0;
+    padding: 0;
+    background: url("subway_map.webp") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Georgia, serif;
+}
+
+/* Transparent white overlay to fade the map */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* lighter or darker if you want */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Main title */
+.overlay h1 {
+    font-size: 60px;
+    color: #b22222; /* subway red-like color */
+    margin: 0;
+}
+
+/* Group names */
+.overlay h2 {
+    font-size: 28px;
+    margin-top: 15px;
+    color: #b22222;
+}
+/* TAB CONTAINER */
+.tab-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(6px);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* TAB BUTTONS */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.tab-button img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.tab-button.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* TAB CONTENT */
+.tab-content {
+    background: rgba(255,255,255,0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+

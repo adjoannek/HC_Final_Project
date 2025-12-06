@@ -1,6 +1,5 @@
-console.log("Hello, World!");
-<!-- JS for Switching Tabs -->
-<script>
+console.log("Sceret message for cool people");
+
     const buttons = document.querySelectorAll('.tab-button');
     const sections = document.querySelectorAll('.content-section');
 
@@ -10,12 +9,11 @@ console.log("Hello, World!");
 
             
             buttons.forEach(btn => btn.classList.remove('active'));
-            // remove active from content
+            
             sections.forEach(sec => sec.classList.remove('active'));
 
-            // activate new ones
+            
             button.classList.add('active');
-            document.getElementById(tab).classList.add('active');
-        });
+        document.getElementById(tab).classList.add('active');
     });
-</script>
+});
