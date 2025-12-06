@@ -14,7 +14,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.5); /* lighter or darker if you want */
+    background: rgba(126, 122, 122, 0.5); 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,22 +25,22 @@ body {
 /* Main title */
 .overlay h1 {
     font-size: 60px;
-    color: #b22222; /* subway red-like color */
+    color: darkred;
     margin: 0;
 }
 
-/* Group names */
+/* Our Names and Welcome Title*/
 .overlay h2 {
     font-size: 28px;
     margin-top: 15px;
-    color: #b22222;
+    color: darkred;
 }
 /* TAB CONTAINER */
 .tab-container {
     width: 90%;
     max-width: 900px;
     margin: 40px auto;
-    background: rgba(255,255,255,0.2);
+    background: rgba(126, 122, 122, 0.2);
     backdrop-filter: blur(6px);
     padding: 20px;
     border-radius: 12px;
