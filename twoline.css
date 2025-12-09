@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0 ;
+}
+.head-section h4 {
+    margin: 0;
+    padding: 0;
+}
+.head-section{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #B22222;
+}
+.train-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: right;
+    
+}
+.train-lines{
+    position: relative;
+    height: 45px;
+    padding-right: 20px;
+    top: -15px;
+}
+.train-lines-six{
+    position: relative;
+    height: 45px;
+    padding-right: 20px;
+    top: -15px;
+    width: 180px;
+}
