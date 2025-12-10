@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0 ;
     font-family: Georgia, serif;
+    background-color: rgb(245, 245, 245);
 }
 .head-section h4 {
     margin: 0;
@@ -39,8 +40,48 @@ h4{
     top: -15px;
 }
 
-.info-box{
-    background-color: black;
-    width: 100px ;
-    height: 100px ;
+.big-four{
+    position: fixed;
+    top: 50%;
+    left: 60px;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+    /*
+    border-radius: 190%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    */
+
 }
+hr{
+   border: none;
+    height: 4px; 
+    background-color: rgb(205, 203, 203);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 95%
+}
+.info-box{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: #F7A261;
+    margin: auto;
+    width: 95% ;
+    height: 500px ;
+}
+.analysis-section-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}   
+
