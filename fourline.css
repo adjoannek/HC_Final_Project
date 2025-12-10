@@ -76,12 +76,20 @@ hr{
     height: 600px ;
 }
 
+.ana-text{
+    font-size: 40px;
+    color: #B22222;
+}
 .analysis-section{
     display: flex;
     flex-direction: column;
     position: relative;
+    left: 10%;
 
-    .analysis-section-box{
+}
+
+
+.analysis-section-box{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -89,9 +97,7 @@ hr{
     width: 500px;
     height: 500px;
     position: relative;
-    left: 58%;
+    left: 55%;
     top: -115px;
-
-}
 
 }
