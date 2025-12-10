@@ -73,15 +73,25 @@ hr{
     background-color: #F7A261;
     margin: auto;
     width: 95% ;
-    height: 500px ;
+    height: 600px ;
 }
-.analysis-section-box{
+
+.analysis-section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .analysis-section-box{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     background-color: black;
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 500px;
     position: relative;
-}   
+    left: 58%;
+    top: -115px;
 
+}
+
+}
