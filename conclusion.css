@@ -101,10 +101,7 @@ hr{
     top: -115px;
 
 }
-h1{
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: center;
-
+.con-text{
+    position: absolute;
+    top:100px;
 }
