@@ -17,7 +17,7 @@ body {
     width: 100%;
     background-color: #B22222;
 }
-h4{
+h3{
     position: relative;
     top:25px;
     color: aliceblue;
@@ -40,19 +40,21 @@ h4{
     top: -15px;
 }
 
-.big-four{
-    position: fixed;
-    top: 50%;
-    left: 60px;
-    flex-direction: row;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    margin: 0 auto;
+.big-six {
+    width: auto;
+    height: 150px;
+    display: block;
+    
 }
+
+.big-six-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
 hr{
    border: none;
     height: 4px; 
@@ -95,4 +97,95 @@ hr{
     left: 55%;
     top: -115px;
 
+}
+/* HEADER STYLE */
+.header {
+    background: #b71c1c;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CLICKABLE TEXT */
+.header-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* TRAIN LOGO TABS */
+.train-tab-container {
+    display: flex;
+    gap: 18px;
+}
+
+.train-tab {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.train-tab.active {
+    outline: 3px solid white;
+    border-radius: 10px;
+}
+
+.train-logo {
+    width: 45px;
+    height: 45px;
+}
+.train-info {
+    display: none;
+}
+
+.train-info.show {
+    display: block;
+}
+.borough-tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f7a35c;
+    padding: 20px 0;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.borough-tab {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+
+.borough-tab:hover {
+    opacity: 0.7;
+}
+
+.borough-tab.active {
+    text-decoration: underline;
+}
+
+.borough-content {
+    background-color: #f7a35c;
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 0 0 5px 5px;
+}
+
+.borough-section {
+    display: none;
+}
+
+.active-section {
+    display: block;
 }

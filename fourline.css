@@ -40,22 +40,18 @@ h3{
     top: -15px;
 }
 
-.big-four{
-    position: absolute;
-    top: 50%;
-    left: 60px;
-    flex-direction: row;
-    position: relative;
-    align-items: center;
-    justify-content: center;
+.big-four {
     width: 200px;
     height: 200px;
+    display: block;
+    
+}
+
+.big-four-box {
+    width: 100%;
     display: flex;
-    margin: 0 auto;
-    /*
-    border-radius: 190%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    */
+    justify-content: center;
+    margin-top: 20px;
 }
 hr{
    border: none;
