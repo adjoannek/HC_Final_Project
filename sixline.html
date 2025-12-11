@@ -39,17 +39,29 @@
         <hr>
 
     <!--The box-->
-        <div class="info-box">
-            <div class="bronx-info">
-                <h3>Bronx</h3>
-            </div>
-            <div class="man-info">
-                <h3>Manhattan</h3>
-            </div>
-            <div class="bk-info">
-                <h3>Brooklyn</h3>
-            </div>
+<div class="borough-wrapper">
+    
+    <div class="borough-tabs">
+        <button class="borough-tab active" onclick="switchBorough('bronx', this)">Bronx</button>
+        <button class="borough-tab" onclick="switchBorough('manhattan', this)">Manhattan</button>
+        <button class="borough-tab" onclick="switchBorough('brooklyn', this)">Brooklyn</button>
+    </div>
+
+    <div class="borough-content">
+        <div id="bronx" class="borough-section active-section">
+            <p>This is the Bronx section.</p>
         </div>
+
+        <div id="manhattan" class="borough-section">
+            <p>This is the Manhattan section.</p>
+        </div>
+
+        <div id="brooklyn" class="borough-section">
+            <p>This is the Brooklyn section.</p>
+        </div>
+    </div>
+
+</div>
         <hr>
     <!--Analsis Section-->
         <div class="analysis-section">
@@ -62,3 +74,23 @@
 
         
         <script src="" async defer></script>
+         <script src="" async defer></script>
+        <script>
+function switchBorough(sectionId, clickedButton) {
+    // Remove "active" from all tabs
+    document.querySelectorAll(".borough-tab").forEach(btn =>
+        btn.classList.remove("active")
+    );
+
+    // Make clicked tab active
+    clickedButton.classList.add("active");
+
+    // Hide all borough sections
+    document.querySelectorAll(".borough-section").forEach(sec =>
+        sec.classList.remove("active-section")
+    );
+
+    // Show selected one
+    document.getElementById(sectionId).classList.add("active-section");
+}
+</script>
