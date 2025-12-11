@@ -17,3 +17,21 @@ console.log("Sceret message for cool people");
         document.getElementById(tab).classList.add('active');
     });
 });
+
+function switchBorough(id, element) {
+    // hide all sections
+    document.querySelectorAll('.borough-section').forEach(sec => {
+        sec.classList.remove('active-section');
+    });
+
+    // show selected section
+    document.getElementById(id).classList.add('active-section');
+
+    // reset tab styles
+    document.querySelectorAll('.borough-tab').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    // highlight clicked tab
+    element.classList.add('active');
+}

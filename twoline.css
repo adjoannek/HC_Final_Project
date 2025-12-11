@@ -148,3 +148,47 @@ hr{
 .train-info.show {
     display: block;
 }
+.borough-tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f7a35c;
+    padding: 20px 0;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.borough-tab {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+
+.borough-tab:hover {
+    opacity: 0.7;
+}
+
+.borough-tab.active {
+    text-decoration: underline;
+}
+
+.borough-content {
+    background-color: #f7a35c;
+    width: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 0 0 5px 5px;
+}
+
+.borough-section {
+    display: none;
+}
+
+.active-section {
+    display: block;
+}
