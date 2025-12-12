@@ -82,7 +82,7 @@ hr{
 
 .analysis-section{
     position: relative;
-    left: ;
+    left:50px;
     width: 500px;
     height: 500px;
 }
@@ -94,17 +94,14 @@ hr{
 
 figure{
     position: relative;
-
 }
 
 .analysis-slider{
-    width: 10px;
-    height: 10px;
-    position: relative;
-    left: 55%;
-    top: -115px;
-
+    width: 500px; 
+    height: 500px;
+    margin-bottom: 20px; 
 }
+
 
 
 
