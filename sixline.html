@@ -8,89 +8,65 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="sixline.css">
         <link rel="fourline" href="fourline.html">
-        <link rel="sixline" href="sixline.html">
-        <link rel="stylesheet" href="index.html">
     </head>
-    <body>
+<body>
     <!-- TOP RED HEADER -->
-<div class="header">
+<div class="head-section">
 
     <!-- LEFT TITLE (CLICKABLE) -->
     <a href="index.html" class="header-title">Honors CS Final</a>
 
     <div class="train-tab-container">
-    <a href="twoline.html" class="train-tab">
-        <img src="images/new2train_logo.png" class="train-logo">
-    </a>
-
-    <a href="fourline.html" class="train-tab">
-        <img src="images/new4train_logo.png" class="train-logo">
-    </a>
-
-    <a href="sixline.html" class="train-tab">
-        <img src="images/6train_logo.png" class="train-logo">
-    </a>
+        <a href="twoline.html" class="train-tab red-circle">
+            <img src="images/new2train_logo.png" class="train-logo">
+        </a>
+        <a href="fourline.html" class="train-tab green-circle">
+            <img src="images/new4train_logo.png" class="train-logo">
+        </a>
+        <a href="sixline.html" class="train-tab green-diamond">
+            <img src="images/6train_logo.png" class="train-logo">
+        </a>
+        </div>
 </div>
 
 </div>
     <div class="big-six-box">
             <img class="big-six" src="images/6train_logo.png" alt="6 Line Logo">
-        </div>
-        <hr>
+    </div>
+            <hr>
 
     <!--The box-->
-<div class="borough-wrapper">
-    
-    <div class="borough-tabs">
-        <button class="borough-tab active" onclick="switchBorough('bronx', this)">Bronx</button>
-        <button class="borough-tab" onclick="switchBorough('manhattan', this)">Manhattan</button>
-        <button class="borough-tab" onclick="switchBorough('brooklyn', this)">Brooklyn</button>
-    </div>
-
-    <div class="borough-content">
-        <div id="bronx" class="borough-section active-section">
-            <p>This is the Bronx section.</p>
+        <div class="info-box">
+            <div class="bronx-info">
+                <h3>Bronx</h3>
+            </div>
+            <div class="man-info">
+                <h3>Manhattan</h3>
+            </div>
+            <div class="bk-info">
+                <h3>Brooklyn</h3>
+            </div>
         </div>
-
-        <div id="manhattan" class="borough-section">
-            <p>This is the Manhattan section.</p>
-        </div>
-
-        <div id="brooklyn" class="borough-section">
-            <p>This is the Brooklyn section.</p>
-        </div>
-    </div>
-
-</div>
         <hr>
+
+
     <!--Analsis Section-->
         <div class="analysis-section">
             <h1 class="ana-text">Analysis Plots</h1>
-            <p>This is the analysis plot</p>
-            
+            <p>The histogram below shows the neigboorhoods that the <br> 6 Train passes through. As shown the neigboorhood <br> with the most stops is East Harlem.</p>
+            <p>The scatter plots to the right show the relationship <br> between the Walkability Score vs. the Niche Ranking <br> and Average Income. The first scatter plot shows a <br> positive correlation between the walkability score <br> and a high niche ranking. The second scatter plot <br> also shows a positive correlation between the <br> walkablitity score and the average income in the <br> specific neighborhoods.</p>
+        
+            <div class="image-layout">
+                <img class="histogram" src="images/HoN.png" alt="Histogram">
+                <div class="scatterplots">
+                    <img class="scatterplot" src="images/WvsN.png" alt="Scatter Plot 1">
+                    <img class="scatterplot" src="images/WvsAI.png" alt="Scatter Plot 2">
+                </div>
+            </div>
         </div>
-        <div class="analysis-section-box"></div>
         
 
         
         <script src="" async defer></script>
-         <script src="" async defer></script>
-        <script>
-function switchBorough(sectionId, clickedButton) {
-    // Remove "active" from all tabs
-    document.querySelectorAll(".borough-tab").forEach(btn =>
-        btn.classList.remove("active")
-    );
-
-    // Make clicked tab active
-    clickedButton.classList.add("active");
-
-    // Hide all borough sections
-    document.querySelectorAll(".borough-section").forEach(sec =>
-        sec.classList.remove("active-section")
-    );
-
-    // Show selected one
-    document.getElementById(sectionId).classList.add("active-section");
-}
-</script>
+</body>
+</html>

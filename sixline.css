@@ -6,16 +6,17 @@
 
 body {
     margin: 0;
-    padding: 0 ;
+    padding: 0;
     font-family: Georgia, serif;
     background-color: rgb(245, 245, 245);
 }
+
 .head-section h4 {
     margin: 0;
     padding: 0;
 }
 
-.head-section{
+.head-section {
     position: relative;
     margin: 0;
     padding: 0;
@@ -23,29 +24,52 @@ body {
     width: 100%;
     background-color: #B22222;
 }
+<<<<<<< HEAD
+
+h3 {
+=======
 h3{
+>>>>>>> 1c74f8b11cad677892d65ab18640b21324ab05ad
     position: relative;
-    top:25px;
+    top: 25px;
     color: aliceblue;
     margin: 0;
     margin-left: 100px;
-
-
 }
-.train-container{
+
+.train-tab-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 10px;
     float: right;
-    
-}
-.train-lines{
-    position: relative;
-    height: 45px;
-    padding-right: 20px;
-    top: -15px;
+    align-items: center;
 }
 
+<<<<<<< HEAD
+.train-logo {
+    width: 40px;
+    height: auto;
+}
+
+.big-six {
+    position: relative;
+    top: 50%;
+    left: 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+    /* border-radius: 190%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+hr {
+    border: none;
+    height: 4px;
+=======
 .big-six {
     width: auto;
     height: 200px;
@@ -64,35 +88,36 @@ h3{
 hr{
    border: none;
     height: 4px; 
+>>>>>>> 1c74f8b11cad677892d65ab18640b21324ab05ad
     background-color: rgb(205, 203, 203);
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 95%
+    width: 95%;
 }
-.info-box{
+
+.info-box {
     display: flex;
     justify-content: center;
     align-self: center;
     background-color: #F7A261;
     margin: auto;
-    width: 95% ;
-    height: 600px ;
+    width: 95%;
+    height: 600px;
 }
 
-.ana-text{
+.ana-text {
     font-size: 40px;
     color: #B22222;
 }
-.analysis-section{
+
+.analysis-section {
     display: flex;
     flex-direction: column;
     position: relative;
     left: 10%;
-
 }
 
-
-.analysis-section-box{
+.analysis-section-box {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -102,7 +127,33 @@ hr{
     position: relative;
     left: 55%;
     top: -115px;
+}
 
+<<<<<<< HEAD
+.image-layout {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px; /* Space between big and small images */
+}
+
+.histogram {
+    width: 500px; /* Adjust size as needed */
+    height: auto;
+}
+
+.scatterplots {
+    display: flex;
+    flex-direction: column; /* Stack small images vertically */
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.scatterplot {
+    width: 500px; /* Adjust size as needed */
+    height: auto;
+}
+=======
 }
 /* HEADER STYLE */
 .header {
@@ -201,3 +252,4 @@ hr{
 .active-section {
     display: block;
 }
+>>>>>>> 1c74f8b11cad677892d65ab18640b21324ab05ad
