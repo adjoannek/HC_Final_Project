@@ -49,16 +49,19 @@
     </div>
 
     <div class="borough-content">
-        <div id="bronx" class="borough-section active-section">
-            <p>This is the Bronx section.</p>
+       <div class="bronx" class="borough-section active-section borough-section">
+            <p>This is the Bronx section.</p> <br>
+            <img src="images/KBronx.png" alt = "The stops of the 2 train in The Bronx">
         </div>
 
         <div id="manhattan" class="borough-section">
             <p>This is the Manhattan section.</p>
+                 <img src="images/KManhattan.png" alt = "The stops of the 2 train in Manhattan">
         </div>
 
         <div id="brooklyn" class="borough-section">
             <p>This is the Brooklyn section.</p>
+                <img src="images/KBrooklyn.png" alt = "The stops of the 2 train in Brooklyn">
         </div>
     </div>
 
@@ -95,6 +98,25 @@
 
         
         <script src="fourline.js" async defer></script>
+        <script>
+function switchBorough(sectionId, clickedButton) {
+    // Remove "active" from all tabs
+    document.querySelectorAll(".borough-tab").forEach(btn =>
+        btn.classList.remove("active")
+    );
 
+    // Make clicked tab active
+    clickedButton.classList.add("active");
+
+    // Hide all borough sections
+    document.querySelectorAll(".borough-section").forEach(sec =>
+        sec.classList.remove("active-section")
+    );
+
+    // Show selected one
+    document.getElementById(sectionId).classList.add("active-section");
+}
+
+        </script>
     </body>
 </html>

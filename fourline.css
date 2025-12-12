@@ -101,9 +101,54 @@ figure{
     height: 500px;
     margin-bottom: 20px; 
 }
+/*
+.bronx {
+    width: 300px;
+    height: 300px;
+    display: flex;
+}
 
+.bronx img {
+    width: 700px;
+    height: 100%;
+    object-fit: contain;
+}
 
+#manhattan {
+    width: 300px;
+    height: 300px;
+    display: flex;
+}
 
+#manhattan img {
+    width: 700px;
+    height: 100%;
+    object-fit: contain;
+}
+
+#brooklyn {
+    width: 300px;
+    height: 300px;
+    display: flex;
+}
+
+#brooklyn img {
+    width: 700px;
+    height: 100%;
+    object-fit: contain;
+}
+    */
+.borough-section{
+     width: 300px;
+    height: 300px;
+    display: flex;
+}
+
+.borough-section imag{
+    width: 700px;
+    height: 100%;
+    object-fit: contain;
+}
 
 
 /* Analysis Section Attempt One 
