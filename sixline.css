@@ -24,9 +24,6 @@ body {
     background-color: #B22222;
 }
 <<<<<<< HEAD
-
-h3 {
-=======
 h3{
     position: relative;
     top: 25px;
@@ -42,7 +39,6 @@ h3{
     float: right;
     align-items: center;
 }
-
 <<<<<<< HEAD
 .train-logo {
     width: 40px;
@@ -67,6 +63,7 @@ h3{
 hr {
     border: none;
     height: 4px;
+}
 =======
 .big-six {
     width: auto;
@@ -152,7 +149,7 @@ hr{
     height: auto;
 }
 =======
-}
+
 /* HEADER STYLE */
 .header {
     background: #b71c1c;
