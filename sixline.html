@@ -3,17 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>6 Line</title>
+        <title>2 Line</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="sixline.css">
+        <link rel="stylesheet" href="twoline.css">
         <link rel="fourline" href="fourline.html">
+        <link rel="sixline" href="sixline.html">
+        <link rel="stylesheet" href="index.html">
     </head>
-<body>
+    <body>
     <!-- TOP RED HEADER -->
-<div class="head-section">
+<div class="header">
 
-    <!-- LEFT TITLE (CLICKABLE) -->
     <!-- LEFT TITLE (CLICKABLE) -->
     <a href="index.html" class="header-title">Honors CS Final</a>
 
@@ -32,18 +33,20 @@
 </div>
 
 </div>
-    <div class="big-six-box">
-            <img class="big-six" src="images/6train_logo.png" alt="6 Line Logo">
-    </div>
-            <hr>
+    <div class="big-two-box">
+            <img class="big-two" src="images/6train_logo.png" alt="2 Line Logo">
+        </div>
+        <hr>
+
 
     <!--The box-->
+       <div class="borough-wrapper">
+    
     <div class="borough-tabs">
         <button class="borough-tab active" onclick="switchBorough('bronx', this)">Bronx</button>
         <button class="borough-tab" onclick="switchBorough('manhattan', this)">Manhattan</button>
         <button class="borough-tab" onclick="switchBorough('brooklyn', this)">Brooklyn</button>
     </div>
-        <div class="info-box">
 
     <div class="borough-content">
         <div id="bronx" class="borough-section active-section">
@@ -62,26 +65,23 @@
         </div>
     </div>
 
-        </div>
+</div>
+
         <hr>
-
-
     <!--Analsis Section-->
         <div class="analysis-section">
-            <h1 class="ana-text">Analysis Plots</h1>
+              <h1 class="ana-text">Analysis Plots</h1>
+            <div class ="image-row">
+<p>The histogram below shows the neigboorhoods that the <br> 
+6 Train passes through. As shown the neigboorhood <br> with the most stops is East Harlem.The scatter plots to the right show the relationship <br> between the Walkability Score vs. the Niche Ranking <br> and Average Income. The first scatter plot shows a <br> positive correlation between the walkability score <br> and a high niche ranking. The second scatter plot <br> also shows a positive correlation between the <br> walkablitity score and the average income in the <br> specific neighborhoods.</p>
             
-            <p>The histogram below shows the neigboorhoods that the <br> 6 Train passes through. As shown the neigboorhood <br> with the most stops is East Harlem.</p>
-            <p>The scatter plots to the right show the relationship <br> between the Walkability Score vs. the Niche Ranking <br> and Average Income. The first scatter plot shows a <br> positive correlation between the walkability score <br> and a high niche ranking. The second scatter plot <br> also shows a positive correlation between the <br> walkablitity score and the average income in the <br> specific neighborhoods.</p>
-        
-            <div class="image-layout">
-                <img class="histogram" src="images/HoN.png" alt="Histogram">
-                <div class="scatterplots">
-                    <img class="scatterplot" src="images/WvsN.png" alt="Scatter Plot 1">
-                    <img class="scatterplot" src="images/WvsAI.png" alt="Scatter Plot 2">
-                </div>
-            </div>
+            <img src="images/HoN.png" alt ="Analysis Plot 1">
+            <img src="images/WvsAI.png" alt ="Analysis Plot 2">
+            <img src="images/WvsN.png" alt ="Analysis Plot 3">
         </div>
-        
+        <div class="analysis-section-box"></div>
+        </div>
+
 
         
         <script src="" async defer></script>
@@ -104,5 +104,6 @@ function switchBorough(sectionId, clickedButton) {
     document.getElementById(sectionId).classList.add("active-section");
 }
 </script>
-</body>
+
+    </body>
 </html>
