@@ -63,6 +63,11 @@ h3{
 
 hr {
    width: 100%;
+    border: none;
+     height: 4px;
+     background-color: rgb(205, 203, 203);
+     margin-top: 20px;
+     margin-bottom: 20px;
 }
 
 .borough-tabs {
@@ -86,6 +91,7 @@ hr {
 .ana-text{
     font-size: 40px;
     color: #B22222;
+    
 }
 .analysis-section{
     display: flex;
@@ -114,7 +120,7 @@ hr {
 
 .image-row {
     display: flex;
-    justify-content: center;   
+    justify-content: bottom;   
     gap: 20px;                 
     flex-wrap: wrap;           
     margin: 20px 0;
@@ -122,7 +128,7 @@ hr {
 
 .image-row img {
     width: 45%;                
-    max-width: 350px;         
+    max-width: 400px;         
     height: auto;
     border-radius: 8px;
 }
