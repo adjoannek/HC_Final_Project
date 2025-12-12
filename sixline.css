@@ -23,7 +23,10 @@ body {
     width: 100%;
     background-color: #B22222;
 }
+<<<<<<< HEAD
 
+h3 {
+=======
 h3{
     position: relative;
     top: 25px;
@@ -64,8 +67,7 @@ h3{
 hr {
     border: none;
     height: 4px;
-}
-
+=======
 .big-six {
     width: auto;
     height: 200px;
@@ -82,8 +84,9 @@ hr {
 
 
 hr{
-    border: none;
-    height: 4px;
+   border: none;
+    height: 4px; 
+>>>>>>> 1c74f8b11cad677892d65ab18640b21324ab05ad
     background-color: rgb(205, 203, 203);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -124,7 +127,7 @@ hr{
     top: -115px;
 }
 
-
+<<<<<<< HEAD
 .image-layout {
     display: flex;
     align-items: center;
@@ -148,8 +151,8 @@ hr{
     width: 500px; /* Adjust size as needed */
     height: auto;
 }
-
-
+=======
+}
 /* HEADER STYLE */
 .header {
     background: #b71c1c;
@@ -247,3 +250,4 @@ hr{
 .active-section {
     display: block;
 }
+>>>>>>> 1c74f8b11cad677892d65ab18640b21324ab05ad
