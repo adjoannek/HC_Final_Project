@@ -151,6 +151,23 @@ figure{
 }
 
 
+.analysis-section img {
+    width: 400px;      
+    height: auto;      
+    margin-bottom: 30px;
+    border-radius: 8px;
+    display: block;
+}
+
+.borough-section img {
+    width: 80%;       
+    max-width: 500px; 
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
 /* Analysis Section Attempt One 
 .ana-text{
     font-size: 40px;

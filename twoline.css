@@ -108,6 +108,20 @@ hr{
     border-radius: 8px;
 }
 
+.image-row {
+    display: flex;
+    justify-content: center;   
+    gap: 20px;                 
+    flex-wrap: wrap;           
+    margin: 20px 0;
+}
+
+.image-row img {
+    width: 45%;                
+    max-width: 350px;         
+    height: auto;
+    border-radius: 8px;
+}
 
 
 /* HEADER STYLE */
