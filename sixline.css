@@ -6,17 +6,16 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 ;
     font-family: Georgia, serif;
     background-color: rgb(245, 245, 245);
 }
-
 .head-section h4 {
     margin: 0;
     padding: 0;
 }
 
-.head-section {
+.head-section{
     position: relative;
     margin: 0;
     padding: 0;
@@ -24,12 +23,8 @@ body {
     width: 100%;
     background-color: #B22222;
 }
-<<<<<<< HEAD
 
-h3 {
-=======
 h3{
->>>>>>> 1c74f8b11cad677892d65ab18640b21324ab05ad
     position: relative;
     top: 25px;
     color: aliceblue;
@@ -39,42 +34,30 @@ h3{
 
 .train-tab-container {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-    float: right;
-    align-items: center;
+    gap: 18px;
 }
 
-<<<<<<< HEAD
+.train-tab {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.train-tab.active {
+    outline: 3px solid white;
+    border-radius: 10px;
+}
+
 .train-logo {
-    width: 40px;
-    height: auto;
+    width: 45px;
+    height: 45px;
 }
 
-.big-six {
-    position: relative;
-    top: 50%;
-    left: 0px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    display: flex;
-    margin: 0 auto;
-    /* border-radius: 190%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-}
-
-hr {
-    border: none;
-    height: 4px;
-=======
 .big-six {
     width: auto;
     height: 200px;
     display: block;
-    
 }
 
 .big-six-box {
@@ -84,11 +67,9 @@ hr {
     margin-top: 20px;
 }
 
-
-hr{
-   border: none;
-    height: 4px; 
->>>>>>> 1c74f8b11cad677892d65ab18640b21324ab05ad
+hr {
+    border: none;
+    height: 4px;
     background-color: rgb(205, 203, 203);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -129,7 +110,6 @@ hr{
     top: -115px;
 }
 
-<<<<<<< HEAD
 .image-layout {
     display: flex;
     align-items: center;
@@ -142,59 +122,6 @@ hr{
     height: auto;
 }
 
-.scatterplots {
-    display: flex;
-    flex-direction: column; /* Stack small images vertically */
-    gap: 10px;
-    align-items: flex-start;
-}
-
-.scatterplot {
-    width: 500px; /* Adjust size as needed */
-    height: auto;
-}
-=======
-}
-/* HEADER STYLE */
-.header {
-    background: #b71c1c;
-    color: white;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* CLICKABLE TEXT */
-.header-title {
-    font-size: 28px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
-
-/* TRAIN LOGO TABS */
-.train-tab-container {
-    display: flex;
-    gap: 18px;
-}
-
-.train-tab {
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 8px;
-    transition: 0.2s;
-}
-
-.train-tab.active {
-    outline: 3px solid white;
-    border-radius: 10px;
-}
-
-.train-logo {
-    width: 45px;
-    height: 45px;
-}
 .train-info {
     display: none;
 }
@@ -202,6 +129,7 @@ hr{
 .train-info.show {
     display: block;
 }
+
 .borough-tabs {
     display: flex;
     justify-content: space-around;
@@ -209,7 +137,7 @@ hr{
     padding: 15px 0;
     width: 95%;
     margin: 0 auto;
-    border-radius: 8px 8px 0 0; /* rounded TOP only */
+    border-radius: 8px 8px 0 0;
 }
 
 .borough-tab {
@@ -252,4 +180,3 @@ hr{
 .active-section {
     display: block;
 }
->>>>>>> 1c74f8b11cad677892d65ab18640b21324ab05ad
