@@ -40,17 +40,29 @@
 
 
     <!--The box-->
-        <div class="info-box">
-            <div class="bronx-info">
-                <h3>Bronx</h3>
-            </div>
-            <div class="man-info">
-                <h3>Manhattan</h3>
-            </div>
-            <div class="bk-info">
-                <h3>Brooklyn</h3>
-            </div>
+   <div class="borough-wrapper">
+    
+    <div class="borough-tabs">
+        <button class="borough-tab active" onclick="switchBorough('bronx', this)">Bronx</button>
+        <button class="borough-tab" onclick="switchBorough('manhattan', this)">Manhattan</button>
+        <button class="borough-tab" onclick="switchBorough('brooklyn', this)">Brooklyn</button>
+    </div>
+
+    <div class="borough-content">
+        <div id="bronx" class="borough-section active-section">
+            <p>This is the Bronx section.</p>
         </div>
+
+        <div id="manhattan" class="borough-section">
+            <p>This is the Manhattan section.</p>
+        </div>
+
+        <div id="brooklyn" class="borough-section">
+            <p>This is the Brooklyn section.</p>
+        </div>
+    </div>
+
+</div>
         <hr>
 
     <div class="analysis-section">
@@ -83,5 +95,6 @@
 
         
         <script src="fourline.js" async defer></script>
+        
     </body>
 </html>

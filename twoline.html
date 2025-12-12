@@ -40,28 +40,26 @@
 
 
     <!--The box-->
-        <div class="borough-tabs">
-<button class="borough-tab active" onclick="switchBorough('bronx', this)">Bronx</button>
-<button class="borough-tab" onclick="switchBorough('manhattan', this)">Manhattan</button>
-<button class="borough-tab" onclick="switchBorough('brooklyn', this)">Brooklyn</button>
-
-</div>
-
-<div class="borough-content">
-
-    <div id="bronx" class="borough-section active-section">
-        <!-- Bronx INFO HERE -->
-        <p>This is the Bronx section.</p>
+       <div class="borough-wrapper">
+    
+    <div class="borough-tabs">
+        <button class="borough-tab active" onclick="switchBorough('bronx', this)">Bronx</button>
+        <button class="borough-tab" onclick="switchBorough('manhattan', this)">Manhattan</button>
+        <button class="borough-tab" onclick="switchBorough('brooklyn', this)">Brooklyn</button>
     </div>
 
-    <div id="manhattan" class="borough-section">
-        <!-- Manhattan INFO HERE -->
-        <p>This is the Manhattan section.</p>
-    </div>
+    <div class="borough-content">
+        <div id="bronx" class="borough-section active-section">
+            <p>This is the Bronx section.</p>
+        </div>
 
-    <div id="brooklyn" class="borough-section">
-        <!-- Brooklyn INFO HERE -->
-        <p>This is the Brooklyn section.</p>
+        <div id="manhattan" class="borough-section">
+            <p>This is the Manhattan section.</p>
+        </div>
+
+        <div id="brooklyn" class="borough-section">
+            <p>This is the Brooklyn section.</p>
+        </div>
     </div>
 
 </div>
