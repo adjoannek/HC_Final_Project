@@ -171,7 +171,29 @@ figure{
     align-items: center;
 
 }
+.graph-one{
+    position: relative;
+    left: 50px;
+}
+.graph-two{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 800px;
+    top: -521px
+}
 
+.graph-three{
+    position: relative;
+    left: 450px;
+    top: -400px
+
+}
+
+.ana-text{
+    font-size: 30px;
+    color: #B22222;
+}
 /* Analysis Section Attempt One 
 .ana-text{
     font-size: 40px;
