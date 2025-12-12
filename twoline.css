@@ -91,19 +91,25 @@ hr{
 
 }
 
-
-.analysis-section-box{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: black;
-    width: 500px;
-    height: 500px;
-    position: relative;
-    left: 55%;
-    top: -115px;
-
+.analysis-section img {
+    width: 400px;      
+    height: auto;      
+    margin-bottom: 30px;
+    border-radius: 8px;
+    display: block;
 }
+
+.borough-section img {
+    width: 80%;       
+    max-width: 500px; 
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+
+
 /* HEADER STYLE */
 .header {
     background: #b71c1c;
