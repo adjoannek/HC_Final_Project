@@ -81,22 +81,32 @@ hr{
 }
 
 .analysis-section{
-    width:100px;
-    height:100px;
-    
+    position: relative;
+    left: ;
+    width: 500px;
+    height: 500px;
 }
+.graph-one{
+    width: 500px;
+    height: 500px;
+   
+}
+
 figure{
     position: relative;
-    left: 0;
 
 }
 
 .analysis-slider{
-    position:relative;
-    width:100px;
-    height:100px;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left: 55%;
+    top: -115px;
 
 }
+
+
 
 
 /* Analysis Section Attempt One 
