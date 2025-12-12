@@ -40,30 +40,83 @@
 
 
     <!--The box-->
-        <div class="info-box">
-            <div class="bronx-info">
-                <h3>Bronx</h3>
-            </div>
-            <div class="man-info">
-                <h3>Manhattan</h3>
-            </div>
-            <div class="bk-info">
-                <h3>Brooklyn</h3>
-            </div>
+        <div class="borough-wrapper">
+    
+    <div class="borough-tabs">
+        <button class="borough-tab active" onclick="switchBorough('bronx', this)">Bronx</button>
+        <button class="borough-tab" onclick="switchBorough('manhattan', this)">Manhattan</button>
+        <button class="borough-tab" onclick="switchBorough('brooklyn', this)">Brooklyn</button>
+    </div>
+
+    <div class="borough-content">
+        <div id="bronx" class="borough-section active-section">
+            <p>This is the Bronx section.</p>
+            <img src="images/KBronx.png" alt = "The stops of the 4 train in The Bronx">
         </div>
+
+        <div id="manhattan" class="borough-section">
+            <p>This is the Manhattan section.</p>
+                 <img src="images/KManhattan.png" alt = "The stops of the 4 train in Manhattan">
+        </div>
+
+        <div id="brooklyn" class="borough-section">
+            <p>This is the Brooklyn section.</p>
+                <img src="images/KBrooklyn.png" alt = "The stops of the 4 train in Brooklyn">
+        </div>
+    </div>
+
+</div>
         <hr>
-    <!--Analsis Section-->
+
+    <div class="analysis-section">
+        <figure>
+            <div class="analysis-slider">
+                <img class="graph-one" src="images/ K Graph-1.png" alt="First Graph">
+            </div> 
+            <div class="analysis-slider">
+                <img src="images/K Graph-2.png" alt="Second Graph">
+            </div>
+            <div class="analysis-slider">
+                <img src="images/K Graph-3.png.png" alt="Third Graph">
+            </div>
+        </figure>
+    </div>
+
+    <!--Analsis Section One -->
+    <!--
         <div class="analysis-section">
-            <button class="arrow-analysis-section" onclick="prevImage">&#10094;</button>
-            <div class="analysis-section-box"></div>
-            <button class="arrow-analysis-section" onclick="prevImage">&#10095;</button>
+            <div class="slider-anaylsis-section">
+                <button class="arrow-analysis-section" onclick="prevImage()">&#10094;</button>
+            <div  id="slider-image"class="analysis-section-box"></div>
+            <button class="arrow-analysis-section" onclick="nextImage()">&#10095;</button>
+            </div>
             <h1 class="ana-text">Analysis Plots</h1>
             <p>This is the analysis plot</p>
         </div>
-        
+        -->
         
 
         
         <script src="fourline.js" async defer></script>
+        <script>
+function switchBorough(sectionId, clickedButton) {
+    // Remove "active" from all tabs
+    document.querySelectorAll(".borough-tab").forEach(btn =>
+        btn.classList.remove("active")
+    );
+
+    // Make clicked tab active
+    clickedButton.classList.add("active");
+
+    // Hide all borough sections
+    document.querySelectorAll(".borough-section").forEach(sec =>
+        sec.classList.remove("active-section")
+    );
+
+    // Show selected one
+    document.getElementById(sectionId).classList.add("active-section");
+}
+
+        </script>
     </body>
 </html>

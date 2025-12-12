@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0 ;
@@ -40,24 +46,21 @@ h3{
     top: -15px;
 }
 
-.big-two{
-    position: absolute;
-    top: 50%;
-    left: 60px;
-    flex-direction: row;
-    position: relative;
-    align-items: center;
-    justify-content: center;
+.big-two {
     width: 200px;
     height: 200px;
-    display: flex;
-    margin: 0 auto;
-    /*
-    border-radius: 190%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    */
-
+    display: block;
+    
 }
+
+.big-two-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
 hr{
    border: none;
     height: 4px; 
@@ -88,19 +91,39 @@ hr{
 
 }
 
-
-.analysis-section-box{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background-color: black;
-    width: 500px;
-    height: 500px;
-    position: relative;
-    left: 55%;
-    top: -115px;
-
+.analysis-section img {
+    width: 400px;      
+    height: auto;      
+    margin-bottom: 30px;
+    border-radius: 8px;
+    display: block;
 }
+
+.borough-section img {
+    width: 80%;       
+    max-width: 500px; 
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;   
+    gap: 20px;                 
+    flex-wrap: wrap;           
+    margin: 20px 0;
+}
+
+.image-row img {
+    width: 45%;                
+    max-width: 350px;         
+    height: auto;
+    border-radius: 8px;
+}
+
+
 /* HEADER STYLE */
 .header {
     background: #b71c1c;
@@ -151,15 +174,15 @@ hr{
 .borough-tabs {
     display: flex;
     justify-content: space-around;
-    background-color: #f7a35c;
-    padding: 20px 0;
-    border-radius: 5px;
-    margin: 0 auto;
+    background-color: none;
+    padding: 15px 0;
     width: 95%;
+    margin: 0 auto;
+    border-radius: 8px 8px 0 0; /* rounded TOP only */
 }
 
 .borough-tab {
-    background: transparent;
+    background: none;
     border: none;
     color: white;
     font-size: 22px;
@@ -167,6 +190,14 @@ hr{
     cursor: pointer;
     padding: 10px 20px;
     transition: 0.2s;
+}
+
+.borough-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #f7a35c;
+    border-radius: 10px;
+    overflow: hidden; 
 }
 
 .borough-tab:hover {
@@ -178,11 +209,9 @@ hr{
 }
 
 .borough-content {
-    background-color: #f7a35c;
-    width: 95%;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 0 0 5px 5px;
+    background-color: none;
+    padding: 5px;
+    border-radius: 0 0 8px 8px; 
 }
 
 .borough-section {
@@ -192,3 +221,4 @@ hr{
 .active-section {
     display: block;
 }
+
