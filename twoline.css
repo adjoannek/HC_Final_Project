@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0 ;
@@ -184,7 +190,7 @@ hr{
 
 .borough-content {
     background-color: none;
-    padding: 30px;
+    padding: 5px;
     border-radius: 0 0 8px 8px; 
 }
 
@@ -195,3 +201,4 @@ hr{
 .active-section {
     display: block;
 }
+
